@@ -1,0 +1,71 @@
+body
+{
+    font-family: "PT Sans Caption";
+    background-color: #F7ECDE;
+}
+h1{
+    font-family: "Pacifico";
+    color:#352E28;
+    font-weight: 500;
+    font-size: 50px;
+    position: relative;
+}
+h2{
+    font-family: "Righteous";
+    font-size: 25px;
+    font-weight: 400;
+    background: linear-gradient(to right , #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+label{
+    font-size: 16px;
+    font-weight:600;
+}
+::selection{
+    background-color: #fec260;
+}
+input:focus{
+    box-shadow: 0px 0px 0px 3px #fec260 !important;
+}
+h1::after{
+    content: "";
+    height: 35%;
+    width: 20%;
+    background-color: #FEC260;
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+    z-index: -1;
+    transition: 0.4s;
+}
+h1:hover::after{
+    height: 70%;
+}
+.visitBtn{
+    color: #fff;
+    background-color: #9EB23B;
+}
+.visitBtn:hover{
+    color: #fff;
+    background-color: #8A9E23;
+}
+.inputs{
+    border-width: 2px 0px 2px 0px;
+    border-style: dotted;
+    border-color: black;
+}
+.circles span {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.circles span:nth-child(1) {
+    background-color: #f15f5d;
+}
+.circles span:nth-child(2) {
+    background-color: #febe2e;
+}
+.circles span:nth-child(3) {
+    background-color: #4db748;
+}

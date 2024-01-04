@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/index_style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center my-5">Bookmarker</h1>
+            <div class="inputs py-4 d-flex flex-column align-items-center">
+                <h2 class="text-center mb-5"><i class="fa-solid fa-bookmark ms-2"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark me-2"></i></h2>
+                <div class="w-100">
+                    <label class=""><i class="fa-solid fa-book-bookmark me-2"></i>Site Name</label>
+                    <input class="form-control my-3" id="siteName" placeholder="Bookmarker Name">
+                </div>
+                <div class="w-100">
+                    <label><i class="fa-solid fa-link me-2"></i>Site URL</label>
+                    <input class="form-control my-3" id="siteURL" placeholder="Website URL">
+                </div>
+                <button id="submitBtn" class="btn btn-danger px-5" onclick="addSite()" data-bs-toggle="modal">Submit</button>
+            </div>
+            <table class="table text-center mt-4">
+                <thead>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>Visit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="modal-title fs-5 circles d-flex " id="exampleModalLabel">
+                            <span class="rounded-circle"></span>
+                            <span class="rounded-circle"></span>
+                            <span class="rounded-circle"></span>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Site Name or Url is not valid, Please follow the rules below :</p>
+                            <ol>
+                            <li>Site name must contain at least 3 characters</li>
+                            <li> Site URL must be a valid one</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/mine.js"></script>
+    </body>
+</html>
